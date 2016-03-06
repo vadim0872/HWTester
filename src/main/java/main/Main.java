@@ -13,7 +13,7 @@ public class Main {
         CaseConfig cfg = new CaseConfig("./cfg/test.properties", args);
         CaseProcessor caseProcessor = new CaseProcessor(cfg);
         boolean result = caseProcessor.process();
-        //result = false; //заглушка
+        //result = false; //заглушка01
         if (!result) {
             System.out.println("Test failed with output:");
             System.out.print(caseProcessor.getServerOut());
